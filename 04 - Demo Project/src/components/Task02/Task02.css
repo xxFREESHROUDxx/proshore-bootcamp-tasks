@@ -1,0 +1,36 @@
+.task02__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.task02__first {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.task02__second {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.task02__second input {
+  width: 100%;
+  height: 30px;
+  font-size: 16px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+.task02__first button,
+p {
+  margin-bottom: 1rem;
+}

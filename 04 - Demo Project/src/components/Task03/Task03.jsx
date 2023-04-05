@@ -1,11 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import './Task03.css';
+import React, { useState, useEffect, useContext } from 'react';
 import axios from 'axios';
-import './ProductList.css';
+import ThemeContext from '../../contexts/ThemeContext';
+import ThemeButton from '../ThemeButton/ThemeButton';
 
-const ProductList = () => {
+const Task03 = () => {
   const [products, setProducts] = useState([]);
   const [error, setError] = useState(null);
   const [search, setSearch] = useState('');
+
+  const { isDarkMode, toggleDarkMode } = useContext(ThemeContext);
 
   useEffect(() => {
     axios
@@ -33,8 +37,8 @@ const ProductList = () => {
   );
 
   return (
-    <div className='product-list'>
-      <h1>Product List</h1>
+    <div className={`product-list ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
+      <h1>Product Lists</h1>
       <div style={{ marginBottom: '2rem' }}>
         <label htmlFor='search'>Search by brand:</label>
         <input type='text' id='search' value={search} onChange={handleSearch} />
@@ -69,8 +73,9 @@ const ProductList = () => {
           </tbody>
         </table>
       )}
+      <ThemeButton />
     </div>
   );
 };
 
-export default ProductList;
+export default Task03;

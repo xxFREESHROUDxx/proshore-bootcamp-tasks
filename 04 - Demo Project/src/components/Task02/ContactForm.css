@@ -1,0 +1,32 @@
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contact__form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact__form input:disabled {
+  color: #000;
+}
+
+.contact__form button {
+  padding: 8px 16px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact__form__button {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}

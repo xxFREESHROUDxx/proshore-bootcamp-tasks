@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './ContactForm.css';
 
 const ContactForm = (props) => {
   const [address, setAddress] = useState('');
@@ -16,9 +17,8 @@ const ContactForm = (props) => {
   };
 
   return (
-    <div>
-      <h3>Contact Form</h3>
-      <form onSubmit={handleSubmit}>
+    <div className='contact__container'>
+      <form className='contact__form' onSubmit={handleSubmit}>
         <label htmlFor='name'>
           Name:
           <input type='text' id='name' value={props.name} disabled />
@@ -39,12 +39,14 @@ const ContactForm = (props) => {
             onChange={(e) => setNumber(e.target.value)}
           />
         </label>
-        <button type='submit' style={{ marginRight: '12px' }}>
-          Submit
-        </button>
-        <button type='button' onClick={props.onHideContactForm}>
-          Close
-        </button>
+        <div className='contact__form__button'>
+          <button type='submit' style={{ marginRight: '12px' }}>
+            Submit
+          </button>
+          <button type='button' onClick={props.onHideContactForm}>
+            Close
+          </button>
+        </div>
       </form>
     </div>
   );

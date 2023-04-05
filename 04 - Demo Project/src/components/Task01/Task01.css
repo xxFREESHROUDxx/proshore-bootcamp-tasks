@@ -1,0 +1,68 @@
+.task01__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.task01__form {
+  border-radius: 10px;
+  padding: 20px 40px;
+  width: 400px;
+  margin-right: 50px;
+  height: 500px;
+}
+
+.shadow--dark {
+  box-shadow: 0px 0px 15px 5px rgba(227, 220, 220, 0.45);
+}
+.shadow--light {
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.45);
+}
+
+.task01__form label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.task01__form input {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px 0;
+}
+
+button {
+  background-color: #000;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 11px 22px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+.task--filtered-items {
+  border-radius: 10px;
+  padding: 20px 40px;
+  width: 500px;
+}
+
+li {
+  font-size: 14px;
+}

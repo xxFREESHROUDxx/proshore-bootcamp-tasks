@@ -1,0 +1,86 @@
+.dark-mode {
+  background-color: #222;
+  color: #e4e4e4;
+}
+
+.light-mode {
+  background-color: #e4e4e4;
+  color: #222;
+}
+
+.font--dark {
+  color: #222;
+}
+
+.font--light {
+  color: #e4e4e4;
+}
+
+h1 {
+  font-size: 3rem;
+  padding: 20px;
+  text-align: center;
+}
+
+h1,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 15px;
+}
+
+.home__navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 10rem;
+  justify-content: center;
+}
+.home__navbar--dark ul {
+  list-style: none;
+  display: flex;
+  gap: 10rem;
+  justify-content: center;
+}
+
+.home__navbar li {
+  border: 1px solid #222;
+  padding: 10px 20px;
+  border-radius: 10px;
+  justify-items: space-between;
+  cursor: pointer;
+}
+.home__navbar--dark li {
+  border: 1px solid #222;
+  padding: 10px 20px;
+  border-radius: 10px;
+  justify-items: space-between;
+  cursor: pointer;
+}
+
+.home__navbar li:hover {
+  background-color: #222;
+  color: #e4e4e4;
+}
+.home__navbar--dark li:hover {
+  background-color: #e4e4e4;
+  color: #e4e4e4;
+}
+
+.home__navbar--dark li {
+  border: 1px solid #e4e4e4;
+  color: #e4e4e4;
+}
+
+.btn-floating {
+  position: fixed;
+  bottom: 15px;
+  right: 25px;
+  /* background-color: black; */
+  color: white;
+  border-radius: 25px;
+}
+.btn-floating:hover {
+  /* background-color: black; */
+  color: white;
+}
